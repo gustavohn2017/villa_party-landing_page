@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Racing+Sans+One&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.scss">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Document</title>
 </head>
 
@@ -18,11 +19,80 @@
     <div class="container">
       <img class="hero__logo" src="./images/Villa_logo.png" alt="Villa Party logo">
       <p class="hero__text">
-        Mega evento beneficente do bairro! <br> Ajudando a comunidade e se divertindo ao mesmo tempo.
+        Mega evento beneficente do bairro Villa Branca! <br>
+        Villa party começa em: <span id="contador"></span>
       </p>
+
+      <div class="infos-bar">
+        <ul class="infos-bar__infos">
+          <li class="infos-bar__infos__item">
+            <b>Localização</b>
+            Avenida das letras - Praça Thereza Porto Marques
+          </li>
+          <li class="infos-bar__infos__item">
+            <b>Entrada</b>
+            5kg de alimentos não perecíveis
+          </li>
+          <li class="infos-bar__infos__item">
+            <b>Data</b>
+            22 de Dezembro de 2025
+          </li>
+        </ul>
+        <a href="#" class="button button--primary">Garanta sua vaga!</a>
+      </div>
     </div>
   </header>
+
+  <section class="event event--shows">
+    <div class="container" data-aos="fade-right">
+      <div class="event__details">
+        <h2 class="event__detail__title">Shows</h2>
+        <p class="event__detail__description">
+          Shows de artistas locais, com muita música e diversão para toda a família.
+        </p>
+      </div>
+      <img class="event__image" src="./images/show.png" alt="foto ilustrativa de show">
+    </div>
+  </section>
+
+  <section class="event event--food event--image-left">
+    <div class="container "  data-aos="fade-left">
+      <div class="event__details">
+        <h2 class="event__detail__title">Comidas</h2>
+        <p class="event__detail__description">
+          Shows de artistas locais, com muita música e diversão para toda a família.
+        </p>
+      </div>
+      <img class="event__image" src="./images/hero.png" alt="foto ilustrativa de show">
+    </div>
+  </section>
+  
+  <section class="event event--kids">
+    <div class="container" data-aos="fade-right">
+      <div class="event__details">
+        <h2 class="event__detail__title">Espaço kids!</h2>
+        <p class="event__detail__description">
+          Shows de artistas locais, com muita música e diversão para toda a família.
+        </p>
+      </div>
+      <img class="event__image" src="./images/kids.png" alt="foto ilustrativa de show">
+    </div>
+  </section>
+
+  <section class="event event--charitable event--image-left">
+    <div class="container"  data-aos="fade-left">
+      <div class="event__details">
+        <h2 class="event__detail__title">Beneficente</h2>
+        <p class="event__detail__description">
+          Shows de artistas locais, com muita música e diversão para toda a família.
+        </p>
+      </div>
+      <img class="event__image" src="./images/beneficente.png" alt="foto ilustrativa de show">
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./scripts/main.js"></script>
 </body>
-<script src="./scripts/main.js"></script>
 
 </html>
