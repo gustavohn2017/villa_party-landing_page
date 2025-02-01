@@ -1,36 +1,44 @@
 @use 'variables' as vars;
+
 .event {
     padding: 80px 0;
-    
 
-    &--shows{
+    &--shows {
         background: linear-gradient(vars.$black, vars.$dark-gold);
+
+        .event__detail__title {
+            border-bottom: 8px solid vars.$white;
+        }
     }
 
-    &--food{
+    &--food {
         background: linear-gradient(vars.$dark-gold, vars.$light-gold);
     }
-    
-    &--kids{
+
+    &--kids {
         background: linear-gradient(vars.$light-gold, vars.$white);
-        color: #000 !important;
     }
 
-    &--image-left{
-        .container{
+    &--image-left {
+        .container {
             flex-direction: row-reverse;
         }
     }
 
-    &--charitable{
+    &--charitable {
         background: linear-gradient(vars.$white, vars.$black);
         color: vars.$black;
     }
+
     .container {
         gap: 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &--claro {
+            color: vars.$white;
+        }
     }
 
     &__details {
@@ -44,9 +52,10 @@
 
     &__detail {
         &__title {
-            font-size: 24px;
+            font-size: 32px;
             font-weight: 800;
             margin-bottom: 16px;
+            border-bottom: 8px solid vars.$black;
         }
 
         &__description {
@@ -56,14 +65,16 @@
         }
     }
 
-    @media (max-width: 640px){
-        .container{
+    @media (max-width: 640px) {
+        .container {
             display: block;
         }
-        &__image{
+
+        &__image {
             width: 100%;
         }
-        &__details{
+
+        &__details {
             margin-right: 0;
             margin-bottom: 16px;
         }
